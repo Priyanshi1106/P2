@@ -1,0 +1,2821 @@
+==================== 5 SERVERS ====================
+Make called for  0
+Make finished  845
+Reached here   0
+Make called for  1
+Make finished  755
+Reached here   0
+Make called for  2
+Make finished  789
+Reached here   0
+Make called for  3
+Make finished  521
+Reached here   0
+Make called for  4
+Make finished  730
+Reached here   0
+Test (2B): basic agreement
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Not leader
+Timer expired 4 in state 0
+Starting election for candidate  4
+Send vote requests
+Server 2: Received request vote from 4 
+Case 2
+Received message server  2
+Resetting timer
+Received true for 4
+Server 0: Received request vote from 4 
+Case 2
+Received message server  0
+Resetting timer
+Server 3: Received request vote from 4 
+Case 2
+Received true for 4
+Sending heartbeats  4
+Received message server  3
+Resetting timer
+Term received 1 and current term 0
+Term received 1 and current term 0
+Server 0: Updated term 0 to 1
+Server 1: Updated term 0 to 1
+Term received 1 and current term 0
+Server 3: Updated term 0 to 1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 0
+Server 2: Updated term 0 to 1
+Server 1: Received request vote from 4 
+Case 2
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Not leader
+Not leader
+Not leader
+Command added to log
+Leader sending append entries
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Receieved Reply to append Entry
+Received true
+Should happen!!!
+Yes!!!
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  2
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Received message server  2
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Receieved Reply to append Entry
+Received true
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  2
+Receieved Reply to append Entry
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Server 0: Updated term 1 to 1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  3
+Resetting timer
+Received message server  2
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Resetting timer
+Receieved Reply to append Entry
+Received message server  1
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Received message server  1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Received message server  2
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Not leader
+Not leader
+Not leader
+Not leader
+Command added to log
+Leader sending append entries
+Term received 1 and current term 1
+Should happen!!!
+Nooo!!!!!
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Should happen!!!
+Term received 1 and current term 1
+Nooo!!!!!
+Should happen!!!
+Nooo!!!!!
+Term received 1 and current term 1
+Should happen!!!
+Nooo!!!!!
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received false
+Received message server  1
+Resetting timer
+Received message server  2
+Receieved Reply to append Entry
+Received false
+Resetting timer
+Receieved Reply to append Entry
+Received false
+Receieved Reply to append Entry
+Received false
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 1: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  3
+Resetting timer
+Server 1: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received message server  1
+Received true
+Received message server  2
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 0: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Received message server  3
+Receieved Reply to append Entry
+Received true
+Server 1: Updated term 1 to 1
+Resetting timer
+Received message server  0
+Received message server  1
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received message server  1
+Resetting timer
+Received true
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Term received 1 and current term 1
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Server 3: Updated term 1 to 1
+Server 0: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Received message server  1
+Resetting timer
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Not leader
+Not leader
+Not leader
+Not leader
+Command added to log
+Leader sending append entries
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  0
+Resetting timer
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Receieved Reply to append Entry
+Received true
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 3: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Received message server  3
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Received message server  3
+Resetting timer
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Server 3: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Receieved Reply to append Entry
+Received true
+Server 1: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Resetting timer
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Resetting timer
+Received message server  2
+Receieved Reply to append Entry
+Received true
+Server 3: Updated term 1 to 1
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  1
+Resetting timer
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  2
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Not leader
+Not leader
+Not leader
+Not leader
+Command added to log
+Leader sending append entries
+Term received 1 and current term 1
+Should happen!!!
+Nooo!!!!!
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Should happen!!!
+Nooo!!!!!
+Term received 1 and current term 1
+Term received 1 and current term 1
+Should happen!!!
+Nooo!!!!!
+Received message server  3
+Resetting timer
+Should happen!!!
+Nooo!!!!!
+Receieved Reply to append Entry
+Received false
+Received message server  2
+Resetting timer
+Received message server  1
+Receieved Reply to append Entry
+Received false
+Resetting timer
+Receieved Reply to append Entry
+Received false
+Receieved Reply to append Entry
+Received false
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  3
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Term received 1 and current term 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  2
+Resetting timer
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Receieved Reply to append Entry
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Server 0: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Received message server  0
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received message server  3
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 3: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Received message server  1
+Server 2: Updated term 1 to 1
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  3
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Server 2: Updated term 1 to 1
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  2
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  2
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Received message server  3
+Receieved Reply to append Entry
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  0
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Not leader
+Not leader
+Not leader
+Not leader
+Command added to log
+Leader sending append entries
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Should happen!!!
+Yes!!!
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Resetting timer
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  3
+Resetting timer
+Received message server  1
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Server 2: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received message server  1
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received message server  1
+Received true
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Received message server  0
+Resetting timer
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Receieved Reply to append Entry
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Received true
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Receieved Reply to append Entry
+Resetting timer
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Received message server  0
+Resetting timer
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 1: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Receieved Reply to append Entry
+Received true
+Received message server  1
+Resetting timer
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Term received 1 and current term 1
+Received message server  2
+Received message server  0
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Server 1: Updated term 1 to 1
+Resetting timer
+Received message server  1
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Timer expired 4 in state 2
+Sending heartbeats: leader  4
+Term received 1 and current term 1
+Server 0: Updated term 1 to 1
+Received message server  0
+Resetting timer
+Term received 1 and current term 1
+Term received 1 and current term 1
+Server 2: Updated term 1 to 1
+Received message server  2
+Resetting timer
+Term received 1 and current term 1
+Server 3: Updated term 1 to 1
+Received message server  3
+Resetting timer
+Server 1: Updated term 1 to 1
+Received message server  1
+Resetting timer
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+Receieved Reply to append Entry
+Received true
+--- FAIL: TestBasicAgree2B (10.82s)
+    raft_test.go:691: one(100) failed to reach agreement
+FAIL
+exit status 1
+FAIL	github.com/cmu440/raft	10.848s

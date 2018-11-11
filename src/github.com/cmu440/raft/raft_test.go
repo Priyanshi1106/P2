@@ -51,9 +51,30 @@ func TestReElection2A(t *testing.T) {
 	// if the leader disconnects, a new one should be elected.
 	fmt.Printf("Disconnecting leader\n")
 	cfg.disconnect(leader1)
-
+	fmt.Printf("Checking for a new leader\n")
+	leader2 := cfg.checkOneLeader()
+	// time.Sleep(RaftElectionTimeout)
+	// time.Sleep(RaftElectionTimeout)
+	fmt.Printf("Reconnecting old leader\n")
+	//cfg.connect((leader1 + 1) % servers)
+	cfg.connect(leader1)
+	time.Sleep(RaftElectionTimeout)
+	fmt.Printf("Disconnecting leader + 1 peer\n")
+	cfg.disconnect(leader2)
+	cfg.disconnect((leader2 + 1) % servers)
+	fmt.Println("waiting a bit")
+	time.Sleep(RaftElectionTimeout)
+	fmt.Println("Checking if no leader")
+	cfg.checkNoLeader()
+	fmt.Printf("Reconnecting disconnected peer\n")
+	//cfg.disconnect(leader2)
+	cfg.connect((leader2 + 1) % servers)
 	// a new leader should be elected
 	fmt.Printf("Checking for a new leader\n")
+	cfg.checkOneLeader()
+	fmt.Printf("Reconnecting old disconnected leader\n")
+	cfg.connect(leader2)
+	fmt.Printf("Checking current leader\n")
 	cfg.checkOneLeader()
 
 	fmt.Printf("======================= END =======================\n\n")
@@ -507,6 +528,7 @@ func (cfg *config) checkOneLeader() int {
 		leaders := make(map[int][]int)
 		for i := 0; i < cfg.n; i++ {
 			if cfg.connected[i] {
+				fmt.Println("GETTING state")
 				if _, t, leader := cfg.rafts[i].GetState(); leader {
 					leaders[t] = append(leaders[t], i)
 				}
@@ -655,9 +677,13 @@ func (cfg *config) one(cmd int, expectedServers int) int {
 				nd, cmd1 := cfg.nCommitted(index)
 				if nd > 0 && nd >= expectedServers {
 					// committed
+
 					if cmd2, ok := cmd1.(int); ok && cmd2 == cmd {
+						fmt.Printf("FROM TEST ND %v %v\n", cmd, cmd2)
 						// and it was the command we submitted.
 						return index
+					} else {
+						fmt.Printf("FROM TEST ND %v %v\n", cmd, cmd2)
 					}
 				}
 				time.Sleep(20 * time.Millisecond)
