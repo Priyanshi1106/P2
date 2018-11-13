@@ -31,7 +31,7 @@ package raft
 //
 
 import (
-//	"fmt"
+	"fmt"
 	"github.com/cmu440/rpc"
 	"math"
 	"math/rand"
@@ -94,7 +94,7 @@ type Raft struct {
 
 	commitIndex int
 	lastApplied int
-
+	killRoutines bool
 	isLeader            bool
 	nextIndex           []int
 	matchIndex          []int
@@ -119,7 +119,7 @@ func (rf *Raft) GetState() (int, int, bool) {
 	me := rf.me
 	term := rf.currentTerm
 	isLeader := rf.isLeader
-	//fmt.Printf("GET STATE return %d %d %v\n", me, term, isLeader)
+	fmt.Printf("GET STATE return %d %d %v\n", me, term, isLeader)
 	rf.mux.Unlock()
 	return me, term, isLeader
 }
@@ -184,11 +184,11 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 	// If requestVote comes, check:
 	rf.receivedMsg <- true
 	rf.mux.Lock()
-	//fmt.Printf("Server %d: Received request vote from %d \n", rf.me, args.CandidateId)
+	fmt.Printf("Server %d: Received request vote from %d \n", rf.me, args.CandidateId)
 	if rf.currentTerm > args.Term {
 		reply.Term = rf.currentTerm
 		reply.VoteGranted = false
-		//fmt.Println("Case 1")
+		fmt.Println("Case 1")
 		rf.mux.Unlock()
 		return
 	}
@@ -196,7 +196,7 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 		if rf.lastTerm == args.LastLogTerm && rf.lastIndex == args.LastLogIndex {
 			reply.Term = rf.currentTerm
 			reply.VoteGranted = true
-			//fmt.Println("Case 2")
+			fmt.Println("Case 2")
 			rf.mux.Unlock()
 			return
 		}
@@ -205,14 +205,14 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 		if rf.lastTerm <= args.LastLogTerm && rf.lastIndex <= args.LastLogIndex {
 			reply.Term = rf.currentTerm
 			reply.VoteGranted = true
-			//fmt.Println("Case 4")
+			fmt.Println("Case 4")
 			rf.mux.Unlock()
 			return
 		}
 	}
 	reply.Term = rf.currentTerm
 	reply.VoteGranted = false
-	//fmt.Println("Case 3 voted for ", rf.votedFor)
+	fmt.Println("Case 3 voted for ", rf.votedFor)
 	rf.mux.Unlock()
 	return
 }
@@ -224,9 +224,9 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		rf.receivedMsg <- true
 		rf.mux.Lock()
 	}
-	////fmt.Printf("Term received %d and current term %d\n", args.Term, rf.currentTerm)
+	//fmt.Printf("Term received %d and current term %d\n", args.Term, rf.currentTerm)
 	if args.Term < rf.currentTerm {
-		//fmt.Printf("Server %d at term %d got stale message of term %d from %d \n", rf.me, rf.currentTerm, args.Term, args.LeaderId)
+		fmt.Printf("Server %d at term %d got stale message of term %d from %d \n", rf.me, rf.currentTerm, args.Term, args.LeaderId)
 		reply.Term = rf.currentTerm
 		reply.Success = false
 		rf.mux.Unlock()
@@ -237,7 +237,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 		matched := false
 		if args.Entries.Message.Command != nil {
 			//if rf.log.Len() != 0 {
-			////fmt.Printf("Should happen!!! %d %d \n", args.PrevLogIndex, args.PrevLogTerm)
+			//fmt.Printf("Should happen!!! %d %d \n", args.PrevLogIndex, args.PrevLogTerm)
 			if args.PrevLogIndex != 0 && args.PrevLogTerm != 0 {
 				if args.PrevLogIndex > len(rf.log) {
 					reply.Term = rf.currentTerm
@@ -249,7 +249,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 				value := rf.log[args.PrevLogIndex - 1]
 				if value.Index == args.PrevLogIndex {
 					if value.Message.Term != args.PrevLogTerm {
-						//fmt.Println("Nooo!!!!!")
+						fmt.Println("Nooo!!!!!")
 						reply.Term = rf.currentTerm
 						reply.Success = false
 						rf.mux.Unlock()
@@ -260,7 +260,7 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 					for i := range rf.log {
 						if rf.log[i].Index == args.PrevLogIndex {
 							if value.Message.Term != args.PrevLogTerm {
-								//fmt.Println("Longer Nooo!!!!!")
+								fmt.Println("Longer Nooo!!!!!")
 								reply.Term = rf.currentTerm
 								reply.Success = false
 								rf.mux.Unlock()
@@ -271,14 +271,14 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 					}
 				}
 			}
-			////fmt.Println("Entry ", len(rf.log))
+			//fmt.Println("Entry ", len(rf.log))
 			if len(rf.log) > args.Entries.Index-1 {
 				value := rf.log[args.Entries.Index-1]
 				if value.Index == args.Entries.Index {
 					if args.Entries.Message.Term != value.Message.Term {
 						matched = true
 					} else {
-						//fmt.Println("Finally found you")
+						fmt.Println("Finally found you")
 						reply.Term = rf.currentTerm
 						reply.Success = true
 						rf.mux.Unlock()
@@ -289,13 +289,13 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 					rf.log = rf.log[:args.Entries.Index-2]
 				}
 			}
-			////fmt.Printf("Yes!!! %d %v \n", args.Entries.Message.Term, args.Entries.Message.Command)
+			//fmt.Printf("Yes!!! %d %v \n", args.Entries.Message.Term, args.Entries.Message.Command)
 			// Update lastTerm and lastIndex for rf
 			rf.log = append(rf.log, args.Entries)
 			rf.lastTerm = args.Entries.Message.Term
 			rf.lastIndex = args.Entries.Index
 			// for i := range rf.log {
-			// 	//fmt.Printf("LOG FOR %d SERVER %d place %v\n", rf.me, i, rf.log[i])
+			// 	fmt.Printf("LOG FOR %d SERVER %d place %v\n", rf.me, i, rf.log[i])
 			// }
 
 			//rf.lastTerm =
@@ -311,25 +311,25 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 				//rf.receivedMsg <- true
 				return
 			}
-			////fmt.Printf("Server %d: Updated term %d to %d\n", rf.me, rf.currentTerm, args.Term)
+			//fmt.Printf("Server %d: Updated term %d to %d\n", rf.me, rf.currentTerm, args.Term)
 			rf.state = Follower
 			rf.leaderId = args.LeaderId
 			rf.currentTerm = args.Term
 			if args.LeaderCommit > rf.commitIndex {
 				oldCommit := rf.commitIndex
-				//fmt.Printf("COMMIT %d Updating %d ", rf.me, rf.commitIndex)
+				fmt.Printf("COMMIT %d Updating %d ", rf.me, rf.commitIndex)
 				rf.commitIndex = int(math.Min(float64(args.LeaderCommit), float64(args.PrevLogIndex+1)))
 					for oldCommit = oldCommit + 1; oldCommit <= rf.commitIndex; oldCommit++ {
 						if oldCommit - 1 < len(rf.log) {
-							//fmt.Printf("MESSGAE %d on SERVER %d ", oldCommit-1, rf.me)
+							fmt.Printf("MESSGAE %d on SERVER %d ", oldCommit-1, rf.me)
 							value := rf.log[oldCommit - 1]
-							//fmt.Printf(" %v \n", value.Message.Command)
+							fmt.Printf(" %v \n", value.Message.Command)
 							rf.mux.Unlock()
 							rf.applyCh <- value.Message
 							rf.mux.Lock()
 						}
 					}
-				//fmt.Printf("to %d \n", rf.commitIndex)
+				fmt.Printf("to %d \n", rf.commitIndex)
 			}
 			reply.Term = rf.currentTerm
 			reply.Success = true
@@ -337,8 +337,6 @@ func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply
 			//rf.receivedMsg <- true
 			return
 		}
-		// TODO: append new entries to the log
-		// TODO: something about leaderCommit
 	}
 }
 
@@ -393,6 +391,12 @@ func (rf *Raft) sendRequestVote(peer int, args *RequestVoteArgs, reply *RequestV
 			rf.receivedVoteReply <- *reply
 			return ok
 		}
+		rf.mux.Lock()
+		if rf.killRoutines {
+			rf.mux.Unlock()
+			return ok
+		}
+		rf.mux.Unlock()
 	}
 }
 
@@ -403,6 +407,12 @@ func (rf *Raft) sendHeartbeatEntries(peer int, args *AppendEntriesArgs, reply *A
 			rf.receivedAppendReply <- *reply
 			return ok
 		}
+		rf.mux.Lock()
+		if rf.killRoutines {
+			rf.mux.Unlock()
+			return ok
+		}
+		rf.mux.Unlock()
 	}
 }
 
@@ -410,23 +420,23 @@ func (rf *Raft) sendAppendEntries(peer int, args *AppendEntriesArgs, reply *Appe
 	for {
 		ok := rf.peers[peer].Call("Raft.AppendEntries", args, reply)
 		if ok {
-			////fmt.Println("RECEIVED ", reply.Success)
+			//fmt.Println("RECEIVED ", reply.Success)
 			if reply.Success {
 				rf.mux.Lock()
 				rf.nextIndex[peer] = args.Entries.Index + 1
 				message := rf.log[args.Entries.Index - 1]
-				//fmt.Printf("Found message %d %d %v\n", message.Index, message.Message.Term, message.Message.Command)
+				fmt.Printf("Found message %d %d %v\n", message.Index, message.Message.Term, message.Message.Command)
 				if message.Index == args.Entries.Index {
 					rf.matchIndex[peer] = rf.nextIndex[peer] - 1
-					//fmt.Println("Leader received correct reply", rf.matchIndex[peer])
+					fmt.Println("Leader received correct reply", rf.matchIndex[peer])
 					//message.Replicated++
 					//rf.log[args.Entries.Index - 1] = message
 				}
-				////fmt.Printf("NEED REPLIES %d\n", len(rf.peers)/2)
+				//fmt.Printf("NEED REPLIES %d\n", len(rf.peers)/2)
 				count := 1
 				index := rf.nextIndex[peer] - 1
 				for i := 0; i < len(rf.peers); i++ {
-					////fmt.Println("Inside loop ", rf.matchIndex[i])
+					//fmt.Println("Inside loop ", rf.matchIndex[i])
 					if rf.matchIndex[i] == index {
 						count++
 					}
@@ -437,7 +447,7 @@ func (rf *Raft) sendAppendEntries(peer int, args *AppendEntriesArgs, reply *Appe
 						// rf.mux.Unlock()
 						// return ok
 					} else {
-						//fmt.Printf("Leader committed entry %v with index %d\n ", message.Message.Command, message.Index)
+						fmt.Printf("Leader committed entry %v with index %d\n ", message.Message.Command, message.Index)
 						rf.commitIndex = message.Index
 						//message.Committed = true
 						rf.log[args.Entries.Index - 1] = message
@@ -447,14 +457,14 @@ func (rf *Raft) sendAppendEntries(peer int, args *AppendEntriesArgs, reply *Appe
 					}
 				}
 				if rf.nextIndex[peer] < rf.lastIndex + 1 && rf.isLeader {
-					////fmt.Println("NEXT ENTRY TO DATE")
+					//fmt.Println("NEXT ENTRY TO DATE")
 					if rf.nextIndex[peer] >= 2 {
 						value := rf.log[rf.nextIndex[peer] - 1]
 						prevValue := rf.log[rf.nextIndex[peer] - 2]
-						//fmt.Printf("SENDING TRUE OLD ENTRIES to %d %d mess %v", peer, rf.nextIndex[peer], value)
+						fmt.Printf("SENDING TRUE OLD ENTRIES to %d %d mess %v", peer, rf.nextIndex[peer], value)
 						args = &AppendEntriesArgs{rf.currentTerm, rf.me, rf.nextIndex[peer] - 1, prevValue.Message.Term, value, rf.commitIndex}
 					} else if rf.nextIndex[peer] == 1 {
-						//fmt.Println("SENDING TRUE LAST ENTRY")
+						fmt.Println("SENDING TRUE LAST ENTRY")
 						value := rf.log[rf.nextIndex[peer] - 1]
 						args = &AppendEntriesArgs{rf.currentTerm, rf.me, 0, 0, value, rf.commitIndex}
 					}
@@ -480,24 +490,30 @@ func (rf *Raft) sendAppendEntries(peer int, args *AppendEntriesArgs, reply *Appe
 				} else if rf.isLeader {
 					rf.nextIndex[peer]--
 					if rf.nextIndex[peer] >= 2 {
-						////fmt.Println("SENDING FALSE OLD ENTRIES ", rf.nextIndex[peer])
+						//fmt.Println("SENDING FALSE OLD ENTRIES ", rf.nextIndex[peer])
 						value := rf.log[rf.nextIndex[peer] - 1]
 						prevValue := rf.log[rf.nextIndex[peer] - 2]
-						//fmt.Printf("SENDING FALSE OLD ENTRIES to %d %d mess %v", peer, rf.nextIndex[peer], value)
+						fmt.Printf("SENDING FALSE OLD ENTRIES to %d %d mess %v", peer, rf.nextIndex[peer], value)
 						args = &AppendEntriesArgs{rf.currentTerm, rf.me, rf.nextIndex[peer] - 1, prevValue.Message.Term, value, rf.commitIndex}
 					} else if rf.nextIndex[peer] == 1 {
-						//fmt.Println("SENDING FALSE LAST ENTRY")
+						fmt.Println("SENDING FALSE LAST ENTRY")
 						value := rf.log[rf.nextIndex[peer] - 1]
 						args = &AppendEntriesArgs{rf.currentTerm, rf.me, 0, 0, value, rf.commitIndex}
 					}
 				} else if !rf.isLeader {
-					//fmt.Println("No longer leader")
+					fmt.Println("No longer leader")
 					rf.mux.Unlock()
 					return ok
 				}
 				rf.mux.Unlock()
 			}
 		}
+		rf.mux.Lock()
+		if rf.killRoutines {
+			rf.mux.Unlock()
+			return ok
+		}
+		rf.mux.Unlock()
 	}
 }
 
@@ -526,21 +542,21 @@ func (rf *Raft) sendAppendEntries(peer int, args *AppendEntriesArgs, reply *Appe
 func (rf *Raft) Start(command interface{}) (int, int, bool) {
 	rf.mux.Lock()
 	if !rf.isLeader {
-//		//fmt.Println("Not leader")
+//		fmt.Println("Not leader")
 		rf.mux.Unlock()
 		return 0, 0, false
 	}
 	rf.lastIndex++
 	rf.lastTerm = rf.currentTerm
-	//fmt.Println("Command ", command)
+	fmt.Println("Command ", command)
 	newCmd := ApplyMsg{rf.currentTerm, rf.lastIndex, command}
 	newLogEntry := &LogEntry{rf.lastIndex, 1, false, newCmd}
 	rf.log = append(rf.log, newLogEntry)
-	//fmt.Println("Command added to log")
+	fmt.Println("Command added to log")
 	term := rf.currentTerm
 	index := rf.lastIndex
 	isLeader := rf.isLeader
-	//fmt.Printf("Command added to log %d %d %v\n", term, index, isLeader)
+	fmt.Printf("Command added to log %d %d %v\n", term, index, isLeader)
 	rf.mux.Unlock()
 	rf.newCommand <- *newLogEntry
 	return index, term, isLeader
@@ -559,7 +575,7 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 //
 func (rf *Raft) Kill() {
 	// Your code here, if desired
-	//rf.killTimeout <- true
+	rf.killTimeout <- true
 }
 
 //
@@ -585,7 +601,7 @@ func (rf *Raft) Kill() {
 // for any long-running work
 //
 func Make(peers []*rpc.ClientEnd, me int, applyCh chan ApplyMsg) *Raft {
-	//fmt.Println("Make called for ", me)
+	fmt.Println("Make called for ", me)
 	rf := Raft{}
 	rf.peers = peers
 	rf.me = me
@@ -614,6 +630,7 @@ func Make(peers []*rpc.ClientEnd, me int, applyCh chan ApplyMsg) *Raft {
 	rf.isLeader = false
 	rf.nextIndex = make([]int, len(peers))
 	rf.matchIndex = make([]int, len(peers))
+	rf.killRoutines = false
 	rf.leaderElected = make(chan bool)
 	rf.receivedMsg = make(chan bool)
 	rf.receivedVoteReply = make(chan RequestVoteReply, len(peers))
@@ -624,7 +641,7 @@ func Make(peers []*rpc.ClientEnd, me int, applyCh chan ApplyMsg) *Raft {
 		rf.nextIndex[i] = 1
 	}
 
-	//fmt.Println("Make finished ", rf.timeout)
+	fmt.Println("Make finished ", rf.timeout)
 	go rf.timeout_routine()
 
 	return &rf
@@ -632,7 +649,7 @@ func Make(peers []*rpc.ClientEnd, me int, applyCh chan ApplyMsg) *Raft {
 
 func (rf *Raft) timeout_routine() {
 	rf.mux.Lock()
-	//fmt.Println("Reached here  ", rf.state)
+	fmt.Println("Reached here  ", rf.state)
 	rf.mux.Unlock()
 	//count := 0
 	ticker := time.NewTicker(time.Duration(random(700, 1200)) * time.Millisecond)
@@ -643,19 +660,19 @@ func (rf *Raft) timeout_routine() {
 		select {
 		case <-ticker.C:
 			rf.mux.Lock()
-			//fmt.Printf("Timer expired %d in state %v\n", rf.me, rf.state)
+			fmt.Printf("Timer expired %d in state %v\n", rf.me, rf.state)
 			if rf.state == Follower || rf.state == Candidate {
 
 				rf.state = Candidate
 				rf.isLeader = false
-				//fmt.Println("Starting election for candidate ", rf.me)
+				fmt.Println("Starting election for candidate ", rf.me)
 				ticker.Stop()
 				ticker = time.NewTicker(time.Duration(random(700, 1200)) * time.Millisecond)
 				rf.mux.Unlock()
 				rf.startNewElection()
 
 			} else {
-				//fmt.Println("Sending heartbeats: leader ", rf.me)
+				fmt.Println("Sending heartbeats: leader ", rf.me)
 				ticker.Stop()
 				ticker = time.NewTicker(time.Duration(100) * time.Millisecond)
 				rf.mux.Unlock()
@@ -664,10 +681,10 @@ func (rf *Raft) timeout_routine() {
 			}
 		case <-rf.receivedMsg:
 			rf.mux.Lock()
-			//fmt.Println("Received message server ", rf.me)
+			fmt.Println("Received message server ", rf.me)
 			if rf.state == Follower || rf.state == Candidate {
 				rf.isLeader = false
-				////fmt.Println("Resetting timer")
+				//fmt.Println("Resetting timer")
 
 				ticker.Stop()
 				ticker = time.NewTicker(time.Duration(random(700, 1200)) * time.Millisecond)
@@ -678,7 +695,7 @@ func (rf *Raft) timeout_routine() {
 			rf.mux.Lock()
 			if rf.state == Candidate {
 				if reply.VoteGranted {
-					//fmt.Printf("Received true for %d\n", rf.me)
+					fmt.Printf("Received true for %d\n", rf.me)
 					rf.voteCount++
 				} else {
 					if reply.Term > rf.currentTerm {
@@ -702,7 +719,7 @@ func (rf *Raft) timeout_routine() {
 					rf.matchIndex[i] = 0
 				}
 
-				//fmt.Println("Sending heartbeats ", rf.me)
+				fmt.Println("Sending heartbeats ", rf.me)
 				//rf.mux.Unlock()
 				ticker.Stop()
 				ticker = time.NewTicker(time.Duration(100) * time.Millisecond)
@@ -715,11 +732,11 @@ func (rf *Raft) timeout_routine() {
 		case reply := <-rf.receivedAppendReply:
 			rf.mux.Lock()
 			if rf.state == Leader {
-				//fmt.Println("Received Reply to append Entry")
+				fmt.Println("Received Reply to append Entry")
 				if reply.Success {
-					////fmt.Println("Received true")
+					//fmt.Println("Received true")
 				} else {
-					//fmt.Printf("Received false %d %d \n", reply.Term, rf.currentTerm)
+					fmt.Printf("Received false %d %d \n", reply.Term, rf.currentTerm)
 					if reply.Term > rf.currentTerm {
 						rf.leaderId = -1
 						rf.voteCount = 0
@@ -734,7 +751,7 @@ func (rf *Raft) timeout_routine() {
 		case newMessage := <-rf.newCommand:
 			rf.mux.Lock()
 			if rf.isLeader {
-				//fmt.Println("Leader sending append entries ", newMessage.Message.Command)
+				fmt.Println("Leader sending append entries ", newMessage.Message.Command)
 				var args *AppendEntriesArgs
 				if rf.lastIndex - 1 == 0 {
 					args = &AppendEntriesArgs{rf.currentTerm, rf.me, 0, 0, &newMessage, rf.commitIndex}
@@ -751,7 +768,10 @@ func (rf *Raft) timeout_routine() {
 					}
 				}
 			}
-
+		case <- rf.killTimeout:
+			rf.mux.Lock()
+			rf.killRoutines = true
+			rf.mux.Unlock()
 		}
 	}
 }
@@ -764,7 +784,7 @@ func random(min, max int) int {
 
 func (rf *Raft) startNewElection() {
 	rf.mux.Lock()
-	//fmt.Println("Send vote requests")
+	fmt.Println("Send vote requests")
 	rf.currentTerm++
 	rf.state = Candidate
 	rf.voteCount = 1
@@ -782,7 +802,7 @@ func (rf *Raft) startNewElection() {
 
 func (rf *Raft) sendHeartbeats() {
 	rf.mux.Lock()
-	////fmt.Println("Send Heartbeats", rf.lastIndex - 1)
+	//fmt.Println("Send Heartbeats", rf.lastIndex - 1)
 	var args *AppendEntriesArgs
 	if rf.lastIndex == 0 || rf.lastIndex - 1 == 0 {
 		args = &AppendEntriesArgs{rf.currentTerm, rf.me, 0, 0, &LogEntry{}, rf.commitIndex}
